@@ -1,0 +1,12 @@
+<div class="container-fluid text-center">
+  <span>{{section.name}} </span>
+  <button class="btn btn-success add-button" (click)="addCard()">+</button>
+  <div class="d-flex justify-content-start text-wrap row">
+    <div *ngFor="let card of cards" class="col text-wrap col-12 col-sm-6 col-md-4">
+      <div contenteditable="true" [ngClass]='["m-2 min-height-width rounded-border-card p-1 background-color-for-cards card-box-shadow",classNames[section.id]]'>
+        <!--editable div-->
+
+      </div>
+    </div>
+  </div>
+</div>

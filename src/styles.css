@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.border-for-main-div{
+    border: 20px solid #757575;
+    border-radius:5px;
+}
+.add-button{
+    border-radius:50%;
+}
+/* setting minimum height and width of each card for symmetry */
+.min-height-width{
+    min-height:100px;
+    min-width:100px;
+}
+
+/* class to give minimum height to all 4 sections of the page */
+.min-height-200px{
+    min-height:200px !important;
+}
+
+/* giving shadow effect to button on hover */
+.card-box-shadow{
+    -webkit-box-shadow: 4px 3px 11px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 3px 11px -5px rgba(0,0,0,0.75);
+    box-shadow: 4px 3px 11px -5px rgba(0,0,0,0.75);
+    transition: box-shadow 1s;
+}
+.card-box-shadow:hover{
+    -webkit-box-shadow: 4px 3px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 3px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 3px 11px 0px rgba(0,0,0,0.75);
+}
+
+/* class to give rounded edges to every card */
+.rounded-border-card{
+    border-radius:5px;
+    border-bottom-right-radius: 20px;
+}
+
+.orange{
+    background:orange;
+}
+.red{
+    background:red;
+}
+.green{
+    background:green;
+}
+.blue{
+    background:blue;
+}

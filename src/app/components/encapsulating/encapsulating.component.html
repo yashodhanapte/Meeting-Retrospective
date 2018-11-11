@@ -1,0 +1,32 @@
+<div class="container-fluid border-for-main-div">
+  <select [(ngModel)]="selected-option" (change)="showOnly(option)">
+    <option *ngFor="let option of options" [value]="option">{{option}}</option>
+
+  </select>
+  <div class="retrospective text-center">
+    <h1>Retrospective</h1>
+  </div>
+  <div class="row m-1">
+
+      <div class="col-sm-6 p-1 min-height-200px" *ngFor="let section of sectionFormat">
+        <app-generic [in]="section"></app-generic>
+      </div>
+
+
+
+
+
+
+    <!-- <div class="col-sm-6 p-1 min-height-200px" *ngIf="showWhatCanBeImproved">
+      <app-what-can-be-improved></app-what-can-be-improved>
+    </div>
+  </div>
+  <div class="row m-1">
+    <div class="col-sm-6 p-1 min-height-200px" *ngIf="showStartDoing">
+      <app-start-doing></app-start-doing>
+    </div>
+    <div class="col-sm-6 p-1 min-height-200px" *ngIf="showActionItems">
+      <app-action-items></app-action-items>
+    </div>
+  </div> -->
+  </div>
